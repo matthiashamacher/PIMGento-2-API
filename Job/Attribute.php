@@ -356,6 +356,11 @@ class Attribute extends Import
                 'attribute_code' => $row['code'],
                 'frontend_label' => $frontendLabel,
                 'is_global'      => $global,
+                'backend_type'   => $row['backend_type'],
+                'frontend_input' => $row['frontend_input'],
+                'backend_model'  => $row['backend_model'],
+                'source_model'   => $row['source_model'],
+                'frontend_model' => $row['frontend_model'],
             ];
             foreach ($columns as $column => $def) {
                 if (!$def['only_init']) {
